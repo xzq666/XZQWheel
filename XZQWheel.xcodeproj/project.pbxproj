@@ -14,6 +14,8 @@
 		2AD216091F98A448004A3E12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD216071F98A448004A3E12 /* LaunchScreen.storyboard */; };
 		2AD2160C1F98A448004A3E12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2160B1F98A448004A3E12 /* main.m */; };
 		2AD216151F98A4A0004A3E12 /* XZQCountButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD216141F98A4A0004A3E12 /* XZQCountButton.m */; };
+		2AF5518D203166890092A65A /* XZQCountButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5518C203166890092A65A /* XZQCountButtonViewController.m */; };
+		2AF55190203168F80092A65A /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5518F203168F80092A65A /* ContactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,11 @@
 		2AD2160B1F98A448004A3E12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2AD216131F98A4A0004A3E12 /* XZQCountButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQCountButton.h; sourceTree = "<group>"; };
 		2AD216141F98A4A0004A3E12 /* XZQCountButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQCountButton.m; sourceTree = "<group>"; };
+		2AF5518B203166890092A65A /* XZQCountButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XZQCountButtonViewController.h; sourceTree = "<group>"; };
+		2AF5518C203166890092A65A /* XZQCountButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZQCountButtonViewController.m; sourceTree = "<group>"; };
+		2AF5518E203168F80092A65A /* ContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		2AF5518F203168F80092A65A /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		2AF5519220316FB70092A65A /* Useful_Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Useful_Define.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +68,15 @@
 		2AD215FB1F98A448004A3E12 /* XZQWheel */ = {
 			isa = PBXGroup;
 			children = (
+				2AF5519120316FA80092A65A /* XZQDefine */,
+				2AF5518A203166720092A65A /* XZQExampleController */,
 				2AD216121F98A4A0004A3E12 /* XZQCountButton */,
 				2AD215FC1F98A448004A3E12 /* AppDelegate.h */,
 				2AD215FD1F98A448004A3E12 /* AppDelegate.m */,
 				2AD215FF1F98A448004A3E12 /* ViewController.h */,
 				2AD216001F98A448004A3E12 /* ViewController.m */,
+				2AF5518E203168F80092A65A /* ContactViewController.h */,
+				2AF5518F203168F80092A65A /* ContactViewController.m */,
 				2AD216021F98A448004A3E12 /* Main.storyboard */,
 				2AD216051F98A448004A3E12 /* Assets.xcassets */,
 				2AD216071F98A448004A3E12 /* LaunchScreen.storyboard */,
@@ -82,6 +93,23 @@
 				2AD216141F98A4A0004A3E12 /* XZQCountButton.m */,
 			);
 			path = XZQCountButton;
+			sourceTree = "<group>";
+		};
+		2AF5518A203166720092A65A /* XZQExampleController */ = {
+			isa = PBXGroup;
+			children = (
+				2AF5518B203166890092A65A /* XZQCountButtonViewController.h */,
+				2AF5518C203166890092A65A /* XZQCountButtonViewController.m */,
+			);
+			path = XZQExampleController;
+			sourceTree = "<group>";
+		};
+		2AF5519120316FA80092A65A /* XZQDefine */ = {
+			isa = PBXGroup;
+			children = (
+				2AF5519220316FB70092A65A /* Useful_Define.h */,
+			);
+			path = XZQDefine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AD216011F98A448004A3E12 /* ViewController.m in Sources */,
+				2AF55190203168F80092A65A /* ContactViewController.m in Sources */,
 				2AD2160C1F98A448004A3E12 /* main.m in Sources */,
 				2AD215FE1F98A448004A3E12 /* AppDelegate.m in Sources */,
+				2AF5518D203166890092A65A /* XZQCountButtonViewController.m in Sources */,
 				2AD216151F98A4A0004A3E12 /* XZQCountButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

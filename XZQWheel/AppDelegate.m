@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "ContactViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    // 初始化一个tabBar控制器并设置为根控制器
+    UITabBarController *tb = [[UITabBarController alloc] init];
+    self.window.rootViewController = tb;
+    
+    // 创建子控制器
+    ViewController *vc1 = [[ViewController alloc] init];
+    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vc1];
+    nav1.tabBarItem.title = @"效果展示";
+    [tb addChildViewController:nav1];
+    
+    ContactViewController *vc2 = [[ContactViewController alloc] init];
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:vc2];
+    nav2.tabBarItem.title = @"联系方式";
+    [tb addChildViewController:nav2];
+    
+    // 设置Window为主窗口并显示出来
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
