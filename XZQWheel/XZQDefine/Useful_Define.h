@@ -69,4 +69,18 @@
 //移除通知
 #define Remove_Notification(key) [[NSNotificationCenter defaultCenter]removeObserver:self name:key object:nil];
 
+/**************************视图**************************/
+//View圆角和加边框
+#define ViewBorderRadius(View,Radius,Width,Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+// View圆角
+#define ViewRadius(View,Radius)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES]
+
 #endif
