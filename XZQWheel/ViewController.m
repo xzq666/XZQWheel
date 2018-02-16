@@ -30,6 +30,10 @@
     [self.view addSubview:tableView];
     tableView.delegate = self;
     tableView.dataSource = self;
+    // iOS11需要对iPhone X安全区偏移量进行特殊处理
+    if (@available(iOS 11.0, *)) {
+        tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAutomatic;
+    }
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_offset(NavBar_Height);
         make.left.right.bottom.mas_offset(0);
