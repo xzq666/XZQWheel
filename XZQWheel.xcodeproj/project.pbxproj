@@ -27,6 +27,7 @@
 		2AD939232032ADCD00494BC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AD939182032ADCD00494BC8 /* Info.plist */; };
 		2AF5518D203166890092A65A /* XZQCountButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5518C203166890092A65A /* XZQCountButtonViewController.m */; };
 		2AF55190203168F80092A65A /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5518F203168F80092A65A /* ContactViewController.m */; };
+		6074FA14C4F5CD6DCA1CCE0D /* libPods-XZQWheel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B137E758A1078EF7050867BB /* libPods-XZQWheel.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,9 @@
 		2AF5518E203168F80092A65A /* ContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
 		2AF5518F203168F80092A65A /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
 		2AF5519220316FB70092A65A /* Useful_Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Useful_Define.h; sourceTree = "<group>"; };
+		62E1C82B82FE2FF4DC94C4DC /* Pods-XZQWheel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XZQWheel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XZQWheel/Pods-XZQWheel.debug.xcconfig"; sourceTree = "<group>"; };
+		B137E758A1078EF7050867BB /* libPods-XZQWheel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XZQWheel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8DD3290861E16AD7FB79E1 /* Pods-XZQWheel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XZQWheel.release.xcconfig"; path = "Pods/Target Support Files/Pods-XZQWheel/Pods-XZQWheel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,17 +84,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6074FA14C4F5CD6DCA1CCE0D /* libPods-XZQWheel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2324976FEC3E1801C0B17081 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62E1C82B82FE2FF4DC94C4DC /* Pods-XZQWheel.debug.xcconfig */,
+				CB8DD3290861E16AD7FB79E1 /* Pods-XZQWheel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2AD215F01F98A448004A3E12 = {
 			isa = PBXGroup;
 			children = (
 				2AD215FB1F98A448004A3E12 /* XZQWheel */,
 				2AD215FA1F98A448004A3E12 /* Products */,
+				2324976FEC3E1801C0B17081 /* Pods */,
+				53D95BA67DFB33728682A35C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +207,14 @@
 			path = XZQDefine;
 			sourceTree = "<group>";
 		};
+		53D95BA67DFB33728682A35C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B137E758A1078EF7050867BB /* libPods-XZQWheel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AD2160F1F98A448004A3E12 /* Build configuration list for PBXNativeTarget "XZQWheel" */;
 			buildPhases = (
+				DF4A0BEA71874189F77910F2 /* [CP] Check Pods Manifest.lock */,
 				2AD215F51F98A448004A3E12 /* Sources */,
 				2AD215F61F98A448004A3E12 /* Frameworks */,
 				2AD215F71F98A448004A3E12 /* Resources */,
+				6E00C2D3A0C229DD8B8C6C32 /* [CP] Embed Pods Frameworks */,
+				C8199431AAB0C500C7A41D42 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,6 +284,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E00C2D3A0C229DD8B8C6C32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XZQWheel/Pods-XZQWheel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8199431AAB0C500C7A41D42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XZQWheel/Pods-XZQWheel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF4A0BEA71874189F77910F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XZQWheel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2AD215F51F98A448004A3E12 /* Sources */ = {
@@ -410,6 +488,7 @@
 		};
 		2AD216101F98A448004A3E12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62E1C82B82FE2FF4DC94C4DC /* Pods-XZQWheel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -426,6 +505,7 @@
 		};
 		2AD216111F98A448004A3E12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8DD3290861E16AD7FB79E1 /* Pods-XZQWheel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
