@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "ContactViewController.h"
+#import "JPFPSStatus.h"
 
 @interface AppDelegate ()
 
@@ -39,7 +40,25 @@
     
     // 设置Window为主窗口并显示出来
     [self.window makeKeyAndVisible];
+    
+#if defined(DEBUG)||defined(_DEBUG) //在模拟器上测试时才显示FPS
+    [[JPFPSStatus sharedInstance] open];
+#endif
+    
+    // 适配iOS11
+    [self fixToiOS11];
+    
     return YES;
+}
+
+// 适配iOS11
+- (void)fixToiOS11 {
+    if (@available(ios 11.0,*)) {
+        UIScrollView.appearance.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        UITableView.appearance.estimatedRowHeight = 0;
+        UITableView.appearance.estimatedSectionFooterHeight = 0;
+        UITableView.appearance.estimatedSectionHeaderHeight = 0;
+    }
 }
 
 

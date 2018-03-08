@@ -10,6 +10,7 @@
 #import "Masonry.h"
 #import "Useful_Define.h"
 #import "XZQCountButtonViewController.h"
+#import "ShopMainVC.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource> {
     NSArray *dataArr; // 列表文字数组
@@ -24,7 +25,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"效果展示";
     
-    dataArr = @[@"倒计时按钮"];
+    dataArr = @[@"倒计时按钮", @"商城展示"];
     
     UITableView *tableView = [[UITableView alloc] init];
     [self.view addSubview:tableView];
@@ -35,7 +36,11 @@
         tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAutomatic;
     }
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_offset(NavBar_Height);
+        if (@available(iOS 11.0, *)) {
+            make.top.mas_offset(NavBar_Height);
+        } else {
+            make.top.mas_offset(0);
+        }
         make.left.right.bottom.mas_offset(0);
     }];
 }
@@ -70,6 +75,14 @@
             XZQCountButtonViewController *countButtonVC = [[XZQCountButtonViewController alloc] init];
             countButtonVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:countButtonVC animated:YES];
+        }
+            break;
+            
+        case 1:
+        {
+            ShopMainVC *shopVC = [[ShopMainVC alloc] init];
+            shopVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:shopVC animated:YES];
         }
             break;
             

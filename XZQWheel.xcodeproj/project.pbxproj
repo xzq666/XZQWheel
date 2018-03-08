@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A31A8202050171F00EED9CD /* JPFPSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31A81F2050171F00EED9CD /* JPFPSStatus.m */; };
+		2A31A82520501A8200EED9CD /* ShopMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31A82420501A8200EED9CD /* ShopMainVC.m */; };
+		2A31A82A20501ADD00EED9CD /* TopToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31A82920501ADD00EED9CD /* TopToolView.m */; };
+		2A3840B12051168E000CE90C /* SlideShowHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3840B02051168E000CE90C /* SlideShowHeaderView.m */; };
+		2AA073C720512DF200823CE5 /* GoodGridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA073C620512DF200823CE5 /* GoodGridItem.m */; };
+		2AA073CB20512EDC00823CE5 /* GoodGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA073CA20512EDC00823CE5 /* GoodGridCell.m */; };
+		2AA073D12051391400823CE5 /* GoodsGrid.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AA073D02051391400823CE5 /* GoodsGrid.plist */; };
 		2AD215FE1F98A448004A3E12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD215FD1F98A448004A3E12 /* AppDelegate.m */; };
 		2AD216011F98A448004A3E12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD216001F98A448004A3E12 /* ViewController.m */; };
-		2AD216041F98A448004A3E12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD216021F98A448004A3E12 /* Main.storyboard */; };
 		2AD216061F98A448004A3E12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD216051F98A448004A3E12 /* Assets.xcassets */; };
-		2AD216091F98A448004A3E12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD216071F98A448004A3E12 /* LaunchScreen.storyboard */; };
 		2AD2160C1F98A448004A3E12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2160B1F98A448004A3E12 /* main.m */; };
 		2AD216151F98A4A0004A3E12 /* XZQCountButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD216141F98A4A0004A3E12 /* XZQCountButton.m */; };
 		2AD939192032ADCD00494BC8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD939002032ADCD00494BC8 /* NSLayoutConstraint+MASDebugAdditions.m */; };
@@ -31,14 +36,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A31A81E2050171F00EED9CD /* JPFPSStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPFPSStatus.h; sourceTree = "<group>"; };
+		2A31A81F2050171F00EED9CD /* JPFPSStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPFPSStatus.m; sourceTree = "<group>"; };
+		2A31A82320501A8200EED9CD /* ShopMainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopMainVC.h; sourceTree = "<group>"; };
+		2A31A82420501A8200EED9CD /* ShopMainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopMainVC.m; sourceTree = "<group>"; };
+		2A31A82820501ADD00EED9CD /* TopToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopToolView.h; sourceTree = "<group>"; };
+		2A31A82920501ADD00EED9CD /* TopToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopToolView.m; sourceTree = "<group>"; };
+		2A3840AF2051168E000CE90C /* SlideShowHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideShowHeaderView.h; sourceTree = "<group>"; };
+		2A3840B02051168E000CE90C /* SlideShowHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideShowHeaderView.m; sourceTree = "<group>"; };
+		2AA073C520512DF200823CE5 /* GoodGridItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodGridItem.h; sourceTree = "<group>"; };
+		2AA073C620512DF200823CE5 /* GoodGridItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodGridItem.m; sourceTree = "<group>"; };
+		2AA073C920512EDC00823CE5 /* GoodGridCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodGridCell.h; sourceTree = "<group>"; };
+		2AA073CA20512EDC00823CE5 /* GoodGridCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodGridCell.m; sourceTree = "<group>"; };
+		2AA073D02051391400823CE5 /* GoodsGrid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GoodsGrid.plist; sourceTree = "<group>"; };
 		2AD215F91F98A448004A3E12 /* XZQWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZQWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD215FC1F98A448004A3E12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2AD215FD1F98A448004A3E12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2AD215FF1F98A448004A3E12 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2AD216001F98A448004A3E12 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2AD216031F98A448004A3E12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AD216051F98A448004A3E12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2AD216081F98A448004A3E12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AD2160A1F98A448004A3E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AD2160B1F98A448004A3E12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2AD216131F98A4A0004A3E12 /* XZQCountButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQCountButton.h; sourceTree = "<group>"; };
@@ -100,6 +116,97 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2A31A81D2050171F00EED9CD /* JPFPSStatus */ = {
+			isa = PBXGroup;
+			children = (
+				2A31A81E2050171F00EED9CD /* JPFPSStatus.h */,
+				2A31A81F2050171F00EED9CD /* JPFPSStatus.m */,
+			);
+			path = JPFPSStatus;
+			sourceTree = "<group>";
+		};
+		2A31A82120501A5D00EED9CD /* XZQShop */ = {
+			isa = PBXGroup;
+			children = (
+				2AA073CD205138E700823CE5 /* Resource */,
+				2A31A82720501AAC00EED9CD /* Model */,
+				2A31A82620501A9800EED9CD /* View */,
+				2A31A82220501A6D00EED9CD /* Controller */,
+			);
+			path = XZQShop;
+			sourceTree = "<group>";
+		};
+		2A31A82220501A6D00EED9CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A31A82320501A8200EED9CD /* ShopMainVC.h */,
+				2A31A82420501A8200EED9CD /* ShopMainVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A31A82620501A9800EED9CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AA073C820512EC400823CE5 /* Cell */,
+				2A3840AE20511677000CE90C /* Header */,
+				2A31A82820501ADD00EED9CD /* TopToolView.h */,
+				2A31A82920501ADD00EED9CD /* TopToolView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A31A82720501AAC00EED9CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2AA073C520512DF200823CE5 /* GoodGridItem.h */,
+				2AA073C620512DF200823CE5 /* GoodGridItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A3840AE20511677000CE90C /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				2A3840AF2051168E000CE90C /* SlideShowHeaderView.h */,
+				2A3840B02051168E000CE90C /* SlideShowHeaderView.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		2AA073C820512EC400823CE5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2AA073C920512EDC00823CE5 /* GoodGridCell.h */,
+				2AA073CA20512EDC00823CE5 /* GoodGridCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2AA073CD205138E700823CE5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2AA073CE205138F000823CE5 /* plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2AA073CE205138F000823CE5 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				2AA073CF2051391400823CE5 /* Main */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
+		2AA073CF2051391400823CE5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2AA073D02051391400823CE5 /* GoodsGrid.plist */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		2AD215F01F98A448004A3E12 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +228,7 @@
 		2AD215FB1F98A448004A3E12 /* XZQWheel */ = {
 			isa = PBXGroup;
 			children = (
+				2A31A82120501A5D00EED9CD /* XZQShop */,
 				2AD938FD2032ADCD00494BC8 /* XZQThirdSDK */,
 				2AF5519120316FA80092A65A /* XZQDefine */,
 				2AF5518A203166720092A65A /* XZQExampleController */,
@@ -131,9 +239,7 @@
 				2AD216001F98A448004A3E12 /* ViewController.m */,
 				2AF5518E203168F80092A65A /* ContactViewController.h */,
 				2AF5518F203168F80092A65A /* ContactViewController.m */,
-				2AD216021F98A448004A3E12 /* Main.storyboard */,
 				2AD216051F98A448004A3E12 /* Assets.xcassets */,
-				2AD216071F98A448004A3E12 /* LaunchScreen.storyboard */,
 				2AD2160A1F98A448004A3E12 /* Info.plist */,
 				2AD2160B1F98A448004A3E12 /* main.m */,
 			);
@@ -152,6 +258,7 @@
 		2AD938FD2032ADCD00494BC8 /* XZQThirdSDK */ = {
 			isa = PBXGroup;
 			children = (
+				2A31A81D2050171F00EED9CD /* JPFPSStatus */,
 				2AD938FE2032ADCD00494BC8 /* Masonry */,
 			);
 			path = XZQThirdSDK;
@@ -276,10 +383,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA073D12051391400823CE5 /* GoodsGrid.plist in Resources */,
 				2AD939232032ADCD00494BC8 /* Info.plist in Resources */,
-				2AD216091F98A448004A3E12 /* LaunchScreen.storyboard in Resources */,
 				2AD216061F98A448004A3E12 /* Assets.xcassets in Resources */,
-				2AD216041F98A448004A3E12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,17 +449,23 @@
 			files = (
 				2AD939212032ADCD00494BC8 /* MASViewConstraint.m in Sources */,
 				2AD216011F98A448004A3E12 /* ViewController.m in Sources */,
+				2A3840B12051168E000CE90C /* SlideShowHeaderView.m in Sources */,
 				2AD9391C2032ADCD00494BC8 /* MASConstraintMaker.m in Sources */,
 				2AF55190203168F80092A65A /* ContactViewController.m in Sources */,
 				2AD9391A2032ADCD00494BC8 /* ViewController+MASAdditions.m in Sources */,
+				2A31A8202050171F00EED9CD /* JPFPSStatus.m in Sources */,
 				2AD939192032ADCD00494BC8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				2AD9391B2032ADCD00494BC8 /* MASCompositeConstraint.m in Sources */,
 				2AD2160C1F98A448004A3E12 /* main.m in Sources */,
+				2AA073CB20512EDC00823CE5 /* GoodGridCell.m in Sources */,
 				2AD9391D2032ADCD00494BC8 /* MASLayoutConstraint.m in Sources */,
 				2AD9391F2032ADCD00494BC8 /* View+MASAdditions.m in Sources */,
+				2A31A82A20501ADD00EED9CD /* TopToolView.m in Sources */,
 				2AD9391E2032ADCD00494BC8 /* NSArray+MASAdditions.m in Sources */,
 				2AD215FE1F98A448004A3E12 /* AppDelegate.m in Sources */,
+				2A31A82520501A8200EED9CD /* ShopMainVC.m in Sources */,
 				2AF5518D203166890092A65A /* XZQCountButtonViewController.m in Sources */,
+				2AA073C720512DF200823CE5 /* GoodGridItem.m in Sources */,
 				2AD939222032ADCD00494BC8 /* MASViewAttribute.m in Sources */,
 				2AD939202032ADCD00494BC8 /* MASConstraint.m in Sources */,
 				2AD216151F98A4A0004A3E12 /* XZQCountButton.m in Sources */,
@@ -361,25 +473,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2AD216021F98A448004A3E12 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2AD216031F98A448004A3E12 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2AD216071F98A448004A3E12 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2AD216081F98A448004A3E12 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2AD2160D1F98A448004A3E12 /* Debug */ = {
@@ -491,10 +584,12 @@
 			baseConfigurationReference = 62E1C82B82FE2FF4DC94C4DC /* Pods-XZQWheel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8L68394J7Q;
 				INFOPLIST_FILE = XZQWheel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xzq.test.XZQWheel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,10 +603,12 @@
 			baseConfigurationReference = CB8DD3290861E16AD7FB79E1 /* Pods-XZQWheel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8L68394J7Q;
 				INFOPLIST_FILE = XZQWheel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xzq.test.XZQWheel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
